@@ -9,4 +9,6 @@ add_executable(StockManager main.cpp
         HashTable.cpp
         HashTable.h
         Manager.cpp
-        Manager.h)
+        Manager.h
+        StockData.cpp
+        StockData.h)

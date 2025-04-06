@@ -4,7 +4,9 @@
 
 #ifndef AKTIE_H
 #define AKTIE_H
+#include <iostream>
 
+#include "StockData.h"
 
 
 class Aktie {
@@ -12,8 +14,8 @@ class Aktie {
 
     private:
 
-    //kann vielleicht als struct implementiert werden
-    int low, high, open, close, volume, date;
+    std::string kuerzel, name;
+    StockData* data[30];
 };
 
 

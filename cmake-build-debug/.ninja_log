@@ -1,0 +1,7 @@
+# ninja log v6
+9	7448	1743967633205792301	CMakeFiles/StockManager.dir/Aktie.cpp.o	5d924248e03d60a5
+11	7662	1743967633207597404	CMakeFiles/StockManager.dir/HashTable.cpp.o	91ad9d0ba60cdf19
+5	7779	1743967633201509817	CMakeFiles/StockManager.dir/main.cpp.o	7e621ee383bf1d9d
+7662	10425	1743967640858707929	CMakeFiles/StockManager.dir/StockData.cpp.o	8646660deda2fb28
+7452	10485	1743967640649086057	CMakeFiles/StockManager.dir/Manager.cpp.o	9465d233e80dda0f
+10486	10675	1743967643682251612	StockManager	1706efb471ec7144

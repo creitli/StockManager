@@ -73,6 +73,12 @@ build CMakeFiles/StockManager.dir/Manager.cpp.o: CXX_COMPILER__StockManager_unsc
   OBJECT_DIR = CMakeFiles/StockManager.dir
   OBJECT_FILE_DIR = CMakeFiles/StockManager.dir
 
+build CMakeFiles/StockManager.dir/StockData.cpp.o: CXX_COMPILER__StockManager_unscanned_Debug /Users/creitli/CLionProjects/StockManager/StockData.cpp || cmake_object_order_depends_target_StockManager
+  DEP_FILE = CMakeFiles/StockManager.dir/StockData.cpp.o.d
+  FLAGS = -g -std=gnu++2a -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/StockManager.dir
+  OBJECT_FILE_DIR = CMakeFiles/StockManager.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target StockManager
@@ -81,7 +87,7 @@ build CMakeFiles/StockManager.dir/Manager.cpp.o: CXX_COMPILER__StockManager_unsc
 #############################################
 # Link the executable StockManager
 
-build StockManager: CXX_EXECUTABLE_LINKER__StockManager_Debug CMakeFiles/StockManager.dir/main.cpp.o CMakeFiles/StockManager.dir/Aktie.cpp.o CMakeFiles/StockManager.dir/HashTable.cpp.o CMakeFiles/StockManager.dir/Manager.cpp.o
+build StockManager: CXX_EXECUTABLE_LINKER__StockManager_Debug CMakeFiles/StockManager.dir/main.cpp.o CMakeFiles/StockManager.dir/Aktie.cpp.o CMakeFiles/StockManager.dir/HashTable.cpp.o CMakeFiles/StockManager.dir/Manager.cpp.o CMakeFiles/StockManager.dir/StockData.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.7
   OBJECT_DIR = CMakeFiles/StockManager.dir
   POST_BUILD = :

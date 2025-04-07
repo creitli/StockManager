@@ -12,7 +12,7 @@ class StockData {
 public:
     StockData(std::string date, std::string close, std::string volume, std::string open, std::string high, std::string low);
     ~StockData();
-    static StockData[] import(std::string filename);
+    //static StockData[] import(std::string filename);
     std::string getDate();
     std::string getClose();
     std::string getVolume();

@@ -17,8 +17,8 @@ public:
     ~HashTable();
 
     int createValue(std::string input);
-    void add(HashTable* table, Aktie aktie);
-
+    void add(HashTable* table, Aktie* aktie);
+    int hashValue(HashTable* table, std::string kuerzel);
 
     Aktie* table[SIZE]; //first prime over 2000
 

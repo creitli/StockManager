@@ -5,8 +5,9 @@
 #ifndef AKTIE_H
 #define AKTIE_H
 #include <iostream>
-
 #include "StockData.h"
+#include "fstream"
+
 
 
 class Aktie {
@@ -18,10 +19,11 @@ public:
     std::string getName();
     void setKuerzel(std::string kuerzel);
     void setName(std::string name);
+    void import(std::string filename);
 
 private:
     std::string kuerzel, name;
-    StockData* data[30];
+    StockData* data[];
 };
 
 

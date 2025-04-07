@@ -5,6 +5,8 @@
 #ifndef MANAGER_H
 #define MANAGER_H
 
+#include "Aktie.h"
+
 
 
 class Manager {

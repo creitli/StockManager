@@ -28,7 +28,7 @@ int HashTable::createValue(std::string input) {
     return value;
 }
 
-void add(HashTable* table, Aktie aktie) {
+void HashTable::add(HashTable* table, Aktie aktie) {
     int input = table->createValue(aktie.getKuerzel());
     int counter = 1;
     while (&table[input] != NULL) {

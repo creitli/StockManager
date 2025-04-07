@@ -31,10 +31,9 @@ void Manager::run() {
                 }else {
                     std::cout<<"Aktienname: "<<std::endl;
                     std::cin>>input2;
-                    hashTable.
+                    Aktie newAktie(input1, input2);
+                    hashTable.add(&hashTable, newAktie);
                 }
-
-
                 break;
 
             case 'q':

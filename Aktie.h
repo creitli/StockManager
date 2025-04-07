@@ -11,8 +11,13 @@
 
 class Aktie {
 public:
+    Aktie();
+    Aktie(std::string name, std::string kuerzel);
+    ~Aktie();
     std::string getKuerzel();
     std::string getName();
+    void setKuerzel(std::string kuerzel);
+    void setName(std::string name);
 
 private:
     std::string kuerzel, name;

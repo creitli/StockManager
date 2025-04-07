@@ -22,17 +22,18 @@ int HashTable::createValue(std::string input) {
         value == NULL;
     }else {
         for (int i = 0; i < input.length(); i++) {
-            value = value + (input.at(i) * pow(31, input.length() - (i + 1) )) /SIZE;
+            value = (int)(value + (input.at(i) * pow(31, input.length() - (i + 1)))) % SIZE;
         }
     }
     return value;
 }
 
-void add(HashTable* table, Aktie* aktie) {
-    int input = table->createValue(aktie->getKuerzel());
+void add(HashTable* table, Aktie aktie) {
+    int input = table->createValue(aktie.getKuerzel());
     int counter = 1;
     while (&table[input] != NULL) {
-        input += counter*counter;
+        input = (input + (counter*counter))%SIZE;
+        counter++;
     }
     table[input] = %aktie;
 }

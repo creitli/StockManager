@@ -10,10 +10,11 @@
 
 
 class Aktie {
+public:
+    std::string getKuerzel();
+    std::string getName();
 
-
-    private:
-
+private:
     std::string kuerzel, name;
     StockData* data[30];
 };

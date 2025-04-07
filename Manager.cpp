@@ -18,9 +18,14 @@ void Manager::run() {
         char input;
         std::cin >> input;
         switch (input) {
+            case '1':
+
+                break;
+
             case 'q':
                 quitter = true;
                 std::cout << "Quitting..." << std::endl;
+                break;
         }
     }
 }

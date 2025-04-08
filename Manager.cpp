@@ -3,9 +3,7 @@
 //
 
 #include "Manager.h"
-
 #include <iostream>
-
 #include "HashTable.h"
 
 Manager::Manager() {
@@ -42,7 +40,11 @@ void Manager::run() {
             }
 
             case '2': {
-                std::cout<<"delete"<<std::endl;
+                std::cout<<"Insert stock name to delete:"<<std::endl;
+                std::string deleteInput;
+                std::cin>>deleteInput;
+                hashTable.table[hashTable.hashValue(%hashTable, deleteInput)] = nullptr;
+                std::cout<< "deleted succesfully";
                 break;
             }
 

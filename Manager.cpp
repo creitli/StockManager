@@ -53,7 +53,7 @@ void Manager::run() {
                 std::cin>>kuerzel;
                 std::cout<<"add stock value\ninput csv:"<<std::endl;
                 std::cin>>fileName;
-                hashTable.table[hashTable.hashValue(&hashTable, )]->import(fileName);
+                hashTable.table[hashTable.hashValue(&hashTable,kuerzel )]->import(fileName);
                 break;
             }
 
